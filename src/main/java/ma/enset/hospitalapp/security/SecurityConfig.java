@@ -39,7 +39,7 @@ public class SecurityConfig {
                 User.withUsername("user1").password(passwordEncoder.encode("1234")).roles("USER").build(),
                 User.withUsername("user2").password(passwordEncoder.encode("1234")).roles("USER").build(),
                 User.withUsername("admin").password(passwordEncoder.encode("1234")).roles("USER","ADMIN").build()
-                );
+        );
     }
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception{
